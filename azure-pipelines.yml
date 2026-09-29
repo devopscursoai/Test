@@ -21,3 +21,9 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'AzureConnection'
+    appName: 'webapppro'
+    package: '$(Build.ArtifactStagingDirectory)'
