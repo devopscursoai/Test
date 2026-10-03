@@ -24,6 +24,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'AzureConnection'
+    azureSubscription: 'Azure Connection'
     appName: 'webapppro'
     package: '$(Build.ArtifactStagingDirectory)'
